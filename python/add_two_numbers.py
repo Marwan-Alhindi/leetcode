@@ -1,3 +1,4 @@
+# This solution works but its not a linked list
 class Solution:
     def addTwoNumbers(self, l1, l2):
         # reverse the lists
@@ -24,8 +25,54 @@ class Solution:
 
         return reversed_out
 
+# How do you implement a linked list?
+# 1. Define your own ListNode class
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
+# 2. Helper function to create a linked list from a Python list
+def create_linked_list(nums):
+    dummy = ListNode(0)
+    curr = dummy
+    for n in nums:
+        curr.next = ListNode(n)
+        curr = curr.next
+    return dummy.next
 
+# 3. Helper function to convert a linked list back to a Python list
+def linked_list_to_list(head):
+    result = []
+    curr = head
+    while curr:
+        result.append(curr.val)
+        curr = curr.next
+    return result
+
+class Solution:
+    def addTwoNumbers(self, l1: list, l2: list) -> list:
+        l1 = create_linked_list(l1)
+        print(type(l1))
+        l2 = create_linked_list(l2)
+        print(l1.val)
+        print(l2.val)
+
+        dummyHead = ListNode(0)
+        curr = dummyHead
+        carry = 0
+        while l1 != None or l2 != None or carry != 0:
+            l1Val = l1.val if l1 else 0
+            l2Val = l2.val if l2 else 0
+            columnSum = l1Val + l2Val + carry
+            carry = columnSum // 10
+            newNode = ListNode(columnSum % 10)
+            curr.next = newNode
+            curr = newNode
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        return linked_list_to_list(dummyHead.next)
+    
 x = Solution()
 print(x.addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]))
-print("Hello world")
+
