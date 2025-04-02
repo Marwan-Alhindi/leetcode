@@ -7,3 +7,5 @@ Here’s the tech stack I’m focusing on, along with the platforms I use to pra
 - Frontend Mentor (React, Tailwind, and optionally TypeScript): https://www.frontendmentor.io/challenges
 - LeetCode (Python, pandas, SQL): https://leetcode.com/
 - Kaggle (Python, pandas, NumPy, Matplotlib, PyTorch): https://www.kaggle.com/
+- Vim: https://vim-adventures.com/
+	•	Improving My Typing Skills: https://www.typingstudy.com
