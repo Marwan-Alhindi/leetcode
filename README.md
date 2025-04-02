@@ -4,6 +4,6 @@ My learning approach focuses on two things: solving small, continuous problems/p
 
 Here’s the tech stack I’m focusing on, along with the platforms I use to practice each part:
 
-Frontend Mentor (React, Tailwind, and optionally TypeScript) https://www.frontendmentor.io/challenges
-LeetCode (Python, pandas, SQL) https://leetcode.com/
-Kaggle (Python, pandas, NumPy, Matplotlib, PyTorch) https://www.kaggle.com/
+- Frontend Mentor (React, Tailwind, and optionally TypeScript): https://www.frontendmentor.io/challenges
+- LeetCode (Python, pandas, SQL): https://leetcode.com/
+- Kaggle (Python, pandas, NumPy, Matplotlib, PyTorch): https://www.kaggle.com/
